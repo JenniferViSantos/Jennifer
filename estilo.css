@@ -1,0 +1,159 @@
+/* Importa uma fonte delicada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Cores suaves e fofinhas */
+:root {
+  --bg: #fff7fb;
+  --primary: #fd90e6;     /* Lavanda rosada */
+  --secondary: #ff65ba;   /* Verde menta pastel */
+  --accent: #fab2fd;      /* Rosa pêssego */
+  --text: #444;
+  --white: #ffffff;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Aplica fonte e cor de fundo */
+
+/* Menu bonito com fundo lavanda */
+header {
+  background-color: var(--primary);
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Corpo com fundo animado e suave */
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ffd6e8, #cce9f9, #d3f8e2, #f8acff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Navegação com estilo */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+nav a[aria-current="page"] {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+/* Conteúdo principal com margens */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Títulos com destaque suave */
+h1, h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Cartões com bordas arredondadas e sombras suaves */
+.card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Estilizando listas */
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* Formulário fofo */
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Botão com cor pastel */
+form button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+/* Rodapé simples e delicado */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 2rem;
+}
+
+/* Animação do fundo gradiente */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
