@@ -1,33 +1,29 @@
-/* Importa uma fonte delicada do Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
-/* Cores suaves e fofinhas */
+/* cores */
 :root {
   --bg: #fff7fb;
-  --primary: #fd90e6;     /* Lavanda rosada */
-  --secondary: #ff65ba;   /* Verde menta pastel */
-  --accent: #fab2fd;      /* Rosa pêssego */
+  --primary: #fd90e6;     
+  --secondary: #ff65ba;   
+  --accent: #fab2fd;      
   --text: #444;
   --white: #ffffff;
 }
 
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Aplica fonte e cor de fundo */
-
-/* Menu bonito com fundo lavanda */
+/* menu */
 header {
   background-color: var(--primary);
   padding: 1rem 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Corpo com fundo animado e suave */
 body {
   font-family: 'Quicksand', sans-serif;
   color: var(--text);
@@ -38,7 +34,6 @@ body {
   animation: gradient 15s ease infinite;
 }
 
-/* Navegação com estilo */
 nav ul {
   list-style: none;
   display: flex;
@@ -65,20 +60,18 @@ nav a[aria-current="page"] {
   color: var(--text);
 }
 
-/* Conteúdo principal com margens */
+/* conteudo principal */
 main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Títulos com destaque suave */
+/* titulos */
 h1, h2 {
   color: var(--primary);
   margin-bottom: 1rem;
 }
-
-/* Cartões com bordas arredondadas e sombras suaves */
 .card {
   background-color: var(--white);
   padding: 1.5rem;
@@ -92,13 +85,12 @@ h1, h2 {
   transform: scale(1.02);
 }
 
-/* Estilizando listas */
 ul {
   list-style: disc;
   padding-left: 1.5rem;
 }
 
-/* Formulário fofo */
+/* formulario */
 form label {
   display: block;
   margin-top: 1rem;
@@ -118,7 +110,7 @@ form textarea {
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
 }
 
-/* Botão com cor pastel */
+/* botao */
 form button {
   background-color: var(--primary);
   color: var(--white);
@@ -136,7 +128,6 @@ form button:hover {
   color: var(--text);
 }
 
-/* Rodapé simples e delicado */
 footer {
   text-align: center;
   padding: 1rem;
@@ -145,7 +136,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Animação do fundo gradiente */
+/* animacao do fundo */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
