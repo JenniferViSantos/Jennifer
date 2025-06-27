@@ -1,7 +1,7 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
  
-  /* 2. Botão voltar ao topo --------------------------------------- */
+  /* botao para voltar */
   const topBtn = document.createElement("button");
   topBtn.setAttribute("aria-label", "Voltar ao topo");
   topBtn.textContent = "↑";
